@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="shortcut icon" href="assets/icones/laptop-code-solid.svg" type="icon">
+</head>
+
+<body>
+    <header>
+        <h1>Decodificador de Texto</h1>
+    </header>
+    <div class="mensagem-flutuante" id="mensagemFlutuante"></div>
+    <div class="container">
+        <div class="input">
+            <textarea class="input-texto fixed-size" placeholder="Digite seu texto aqui..." required></textarea>
+            
+            <div class="atencao">
+                <div class="atencao_frase">
+                    <img src="/assets/icones/circle-exclamation-solid.svg"> Apenas letras minúsculas e sem acento
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="encriptar" onclick="btnEncriptar()"> Criptografar</button>
+                <button class="desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </div>
+        <div class="output">
+            <textarea class="output-texto fixed-size" placeholder="Nenhuma mensagem encontrada." readonly></textarea>
+            <div class="atencao">
+                <div class="atencao_frase">
+                    <img src="/assets/icones/circle-exclamation-solid.svg"> Copie o texto criptografado
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="botao_copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+            <div class="mensagem-flutuante" id="mensagemFlutuante"></div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <span class="footer__texto">
+            Feito com <img class="icone icone--texto" src="./assets/icones/iconmonstr-favorite-7.svg"
+                alt="icone de coração"> por Nayla Hilana | Oracle One T6
+        </span>
+    </footer>
+
+    <script src="/assets/script.js"></script>
+</body>
+
+</html>
